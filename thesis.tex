@@ -1,0 +1,138 @@
+\documentclass[footmark=none]{tubaf-thesis}
+\KOMAoptions{%
+    listof=totoc,
+}
+\usepackage[sans]{tubaf-fonts} % Arial
+%\usepackage[]{tubaf-fonts}    % Times
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[ngerman]{babel}
+\usepackage[style=ieee, backend=biber, sorting=none, doi=false, isbn=false, url=false]{biblatex}
+\addbibresource{refs.bib}
+
+\usepackage{hyperref}
+
+\subject{Seminararbeit}
+\title{Roboter in Bergwerken}
+\author{Vorname Nachname\\{\small Matrikel: 12\,345}}
+\date{30. August 2024}
+\examiners{Prof. Dr. Bernhard Jung \and M.Sc. Robert Lösch}
+\course{Bachelor Angewandte Informatik / Diplom Robotik}
+%\logo{\includegraphics{innovative-hochschule}} % Logo of Institute, Project etc.
+
+
+% Document
+\begin{document}
+
+    \pagenumbering{roman}
+
+    \maketitle
+    \makedeclarationofauthorship[30. August 2024]
+    \tableofcontents
+    
+    \newpage
+    \listoffigures 						% Abbildungsverzeichnis
+    \newpage
+    \listoftables 						% Tabellenverzeichnis
+    
+    \clearpage
+    \pagenumbering{arabic}
+    
+    \chapter{Einleitung}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. \cite{Losch2018} Donec
+    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
+    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
+    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
+    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
+    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+    
+    \section{Motivation}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
+    ullamcorper, felis non sodales commodo~\cite{Guth2018}, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
+    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
+    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
+    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
+    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+
+    \section{Struktur der Arbeit}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
+    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
+    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
+    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
+    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
+    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+
+    \chapter{Hauptteil}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
+    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. \cite[100]{Bishop2006}
+    Ut porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
+    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
+    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
+    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+    
+    \section{Aufbau}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
+    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
+    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. \cite{Gunther2019,Lösch2018a} Sed interdum libero ut metus. 
+    Pellentesque placerat. Nam rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. 
+    Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, 
+    turpis. Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+
+    \begin{table}[b]
+        \centering
+        \caption[Trinkgewohnheiten in der Cafeteria]{Lange Caption über die Trinkgewohnheiten in der Cafeteria in der neuen Uni-Bibliothek.}
+        \label{tab:Kaffee}
+        \begin{tabular}{cl}
+            \toprule
+            Name & Getränk \\
+            \midrule
+            Peter & Kaffee \\
+            Paul & Kakao \\
+            Mary & Tee \\
+            John & Kaffee \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    
+    
+    \section{Anwendung}
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
+    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
+    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
+    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
+    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
+    rutrum augue a leo. Morbi sed elit sit amet ante~\cite{Losch2023} lobortis sollicitudin. Praesent blandit
+    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
+    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+    Abb.~\ref{fig:1} ist ein Logo und Tab.~\ref{tab:Kaffee} eine Beispieltabelle.
+    
+
+
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=4cm]{innovative-hochschule.png}
+        \caption{Ein Logo}
+        \label{fig:1}
+    \end{figure}
+
+
+%    \nocite{*} % include all entries in the bibliography for testing
+    \printbibliography[heading=bibintoc,title=Literaturverzeichnis]
+
+\end{document}
