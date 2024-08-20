@@ -8,17 +8,15 @@
 \usepackage{booktabs}
 \usepackage[ngerman]{babel}
 \usepackage[style=ieee, backend=biber, sorting=none, doi=false, isbn=false, url=false]{biblatex}
-\addbibresource{refs.bib}
 
 \usepackage{hyperref}
 
 \subject{Seminararbeit}
-\title{Roboter in Bergwerken}
-\author{Vorname Nachname\\{\small Matrikel: 12\,345}}
+\title{Energieeffiziente Eingebettete Systeme:\\Dynamische Spannungs- und Frequenzskalierung}
+\author{Ben Weckend\\{\small Matrikel: 67551}}
 \date{30. August 2024}
 \examiners{Prof. Dr. Bernhard Jung \and M.Sc. Robert Lösch}
-\course{Bachelor Angewandte Informatik / Diplom Robotik}
-%\logo{\includegraphics{innovative-hochschule}} % Logo of Institute, Project etc.
+\course{Diplom Robotik}
 
 
 % Document
@@ -39,100 +37,108 @@
     \pagenumbering{arabic}
     
     \chapter{Einleitung}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. \cite{Losch2018} Donec
-    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
-    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
-    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
-    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
-    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
+    \cite{5545490}
+    	\section{Hintergrund und Motivation}
+   			
+    	\section{Zielsetzung der Arbeit}
     
-    \section{Motivation}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
-    ullamcorper, felis non sodales commodo~\cite{Guth2018}, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
-    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
-    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
-    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
-    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-
-    \section{Struktur der Arbeit}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
-    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
-    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
-    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
-    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
-    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-
-    \chapter{Hauptteil}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
-    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. \cite[100]{Bishop2006}
-    Ut porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
-    rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. Praesent blandit
-    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
-    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-    
-    \section{Aufbau}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
-    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
-    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. \cite{Gunther2019,Lösch2018a} Sed interdum libero ut metus. 
-    Pellentesque placerat. Nam rutrum augue a leo. Morbi sed elit sit amet ante lobortis sollicitudin. 
-    Praesent blandit blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, 
-    turpis. Mauris lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-
-    \begin{table}[b]
-        \centering
-        \caption[Trinkgewohnheiten in der Cafeteria]{Lange Caption über die Trinkgewohnheiten in der Cafeteria in der neuen Uni-Bibliothek.}
-        \label{tab:Kaffee}
-        \begin{tabular}{cl}
-            \toprule
-            Name & Getränk \\
-            \midrule
-            Peter & Kaffee \\
-            Paul & Kakao \\
-            Mary & Tee \\
-            John & Kaffee \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
+    	\section{Struktur der Arbeit}
     
     
-    \section{Anwendung}
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem.
-    Nullam nec mi et neque pharetra sollicitudin. Praesent imperdiet mi nec ante. Donec
-    ullamcorper, felis non sodales commodo, lectus velit ultrices augue, a dignissim nibh
-    lectus placerat pede. Vivamus nunc nunc, molestie ut, ultricies vel, semper in, velit. Ut
-    porttitor. Praesent in sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Duis fringilla tristique neque. Sed interdum libero ut metus. Pellentesque placerat. Nam
-    rutrum augue a leo. Morbi sed elit sit amet ante~\cite{Losch2023} lobortis sollicitudin. Praesent blandit
-    blandit mauris. Praesent lectus tellus, aliquet aliquam, luctus a, egestas a, turpis. Mauris
-    lacinia lorem sit amet ipsum. Nunc quis urna dictum turpis accumsan semper.
-    Abb.~\ref{fig:1} ist ein Logo und Tab.~\ref{tab:Kaffee} eine Beispieltabelle.
+ 
+    \chapter{Grundlagen}
+    
+    	\section{Eingebettete Systeme und deren Anwendungen}
+    
+    	\section{Energieeffizienz in eingebetteten Systemen}
+    
+    		\subsection{ASIC Design}
+    
+    	\section{Dynamische Spannungs- und Frequenzskalierung Konzepte und Prinzipien}
+    
+    
+    
+    \chapter{Techniken zur Dynamischen Spannungs- und Frequenzskalierung}
+    
+    	\section{Frequenzskalierung}
+    	
+    		\subsection{Dynamische Frequenzskalierung}
+    		
+    		\subsection{Thermisch bedingte Frequenzskalierung}
+    
+    	\section{Spannungsskalierung}
+    	
+        	\subsection{Statistische Spannungsskalierung}
+        	
+        	\subsection{Adaptive Spannungsskalierungstechniken}
+        	
+		\section{Aufbau und Funktion eines Halbleiterbausteins}
+        
+        	\subsection{Spannungsskalierung und Transistoren}
+        	
+        \section{Kombinierte Spannungs- und Frequenzskalierungstechniken}
+        
+        
+        
+	\chapter{Implementierung von DVFS in eingebettete Systeme}
+       
+       	\section{Hardwareanforderungen für DVFS}
+       	
+       	
+       	
+	\chapter{Grundlegenden Stromspar-Mechanismen}
+	
+		\subsection{Gating}
+			
+			\subsubsection{Power Gating}
+		
+			\subsubsection{Clock Gating}
+		
+		\subsection{Cache-Hierarchien optimieren}
+		
+		\subsection{Sleepmodus}
+		
+		\subsection{Standby-Modus}
+		
+		\subsection{Power-Down-Modus}
+       
+       		
+       	
+       	
+       	
+	\chapter{Anwendungen und Fallstudien}
+       	
+		\section{DVFS in mobilen Geräten und Wearables}
+        	
+        \section{DVFS in IoT-Geräten und Sensornetzwerken}
+        	
+        \section{DVFS in Weltraumtechnik und Sonden}
+        	
+        	
+        	
+        \chapter{Herausforderungen und Zukunftsaussichten}
+        
+        
+        
+	\chapter{Schlussfolgerung}
+        
+        \section{Zusammenfassung der wichtigsten Ergebnisse}
+    
+    	\section{Bewertung der Rechercheergebnisse}
+    		
+    	\section{Ausblick auf zukünftige Forschungsrichtungen}
+    
+    
+    
+   
     
 
 
-    \begin{figure}[t]
-        \centering
-        \includegraphics[width=4cm]{innovative-hochschule.png}
-        \caption{Ein Logo}
-        \label{fig:1}
-    \end{figure}
 
+	\bibliographystyle{plain}
+	\bibliography{trueRef}
 
 %    \nocite{*} % include all entries in the bibliography for testing
-    \printbibliography[heading=bibintoc,title=Literaturverzeichnis]
+    %\printbibliography[heading=bibintoc,title=Literaturverzeichnis]
 
 \end{document}
