@@ -37,6 +37,7 @@ In einer Welt, die immer stärker vernetzt ist, steigen die Anforderungen an die
 
 ---
 
+[Link zur Seminararbeit](https://github.com/BenWeckend/Seminararbeit-DVFS-Latex/blob/main/DVFS_Ben_Weckend.pdf)
 
 **Autor:** Ben Weckend  
 **Prüfer:** Prof. Dr. Bernhard Jung, M.Sc. Robert Lösch  
