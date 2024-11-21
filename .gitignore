@@ -1,18 +1,18 @@
 #specific files:
-#tubaf-article.cls
-#tubaf-beamer.cls
-#tubaf-color.sty
-#tubaf-fonts.sty
-#tubaf-letter.cls
-#tubaf-logo.sty
-#tubaf-marks.sty
-#tubaf-protocol.cls
-#tubaf-report.cls
-#tubaf-script.cls
-#tubaf-silhouette.sty
-#tubaf-thesis.cls
-#tubaf-title.sty
-#tubaf-trapezoid.sty
+tubaf-article.cls
+tubaf-beamer.cls
+tubaf-color.sty
+tubaf-fonts.sty
+tubaf-letter.cls
+tubaf-logo.sty
+tubaf-marks.sty
+tubaf-protocol.cls
+tubaf-report.cls
+tubaf-script.cls
+tubaf-silhouette.sty
+tubaf-thesis.cls
+tubaf-title.sty
+tubaf-trapezoid.sty
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
